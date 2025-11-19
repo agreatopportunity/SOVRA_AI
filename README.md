@@ -38,7 +38,7 @@ You control it entirely with **voice commands**:
 5. For real questions, it sends the text to your **oobabooga OpenAI-compatible API** at:
 
    ```text
-   https://api.burtoncummings.io/v1/chat/completions
+   https://YOUR_OOBABOOGA_API/v1/chat/completions
    ```
 
 6. Your oobabooga LLM returns a reply.
@@ -116,13 +116,13 @@ CUDA_VISIBLE_DEVICES=1 python3 server.py \
 Then you have it reverse-proxied / exposed as:
 
 ```text
-https://api.burtoncummings.io
+https://YOUR_OOBABOOGA_API
 ```
 
 So the **OpenAI-style chat endpoint** the Python app hits is:
 
 ```text
-https://api.burtoncummings.io/v1/chat/completions
+https://YOUR_OOBABOOGA_API/v1/chat/completions
 ```
 
 This is a standard OpenAI-compatible endpoint provided by oobabooga’s API server.
@@ -141,7 +141,7 @@ The core script you’re running (e.g. `ai_x4.py`) does:
 Key configuration at the top:
 
 ```python
-INDEX_SERVER_BASE = "https://api.burtoncummings.io"
+INDEX_SERVER_BASE = "https://YOUR_OOBABOOGA_API"
 CHAT_URL = f"{INDEX_SERVER_BASE}/v1/chat/completions"
 
 API_KEY = "878_878"
@@ -378,7 +378,7 @@ Then just join a Space, route your audio correctly (mic: your mic, “speaker”
 * **LLM / Chat Backend**:
 
   * [x] **oobabooga / text-generation-webui**
-  * [x] Exposed via `https://api.burtoncummings.io/v1/chat/completions`
+  * [x] Exposed via `https://YOUR_OOBABOOGA_API/v1/chat/completions`
   * [x] Auth: `Authorization: Bearer 878_878`
 
 * **STT (Speech-to-Text)**:
