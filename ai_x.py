@@ -16,7 +16,7 @@ INDEX_SERVER_BASE = "https://YOUR_OOBABOOGA_API"
 CHAT_URL = f"{INDEX_SERVER_BASE}/v1/chat/completions"
 
 # API key from:  --api-key SECRET_KEY
-API_KEY = "878_878"
+API_KEY = "SECRET_KEY"
 
 HEADERS = {
     "Content-Type": "application/json",
