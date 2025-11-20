@@ -379,7 +379,7 @@ Then just join a Space, route your audio correctly (mic: your mic, “speaker”
 
   * [x] **oobabooga / text-generation-webui**
   * [x] Exposed via `https://YOUR_OOBABOOGA_API/v1/chat/completions`
-  * [x] Auth: `Authorization: Bearer 878_878`
+  * [x] Auth: `Authorization: Bearer YOUR_KEY`
 
 * **STT (Speech-to-Text)**:
 
