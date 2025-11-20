@@ -104,10 +104,10 @@ CUDA_VISIBLE_DEVICES=1 python3 server.py \
   --listen-port 7860 \
   --share \
   --api \
-  --api-port 3002 \
-  --api-key 878_878 \
+  --api-port 8080 \
+  --api-key YOUR_KEY \
   --trust-remote-code \
-  --gradio-auth "admin:0011" \
+  --gradio-auth "12345" \
   --loader llama.cpp \
   --gpu-layers 40 \
   --extensions long_replies send_pictures
