@@ -99,7 +99,7 @@ If you see **NumPy 1.x vs 2.x** compatibility warnings for other native modules,
 You are running **oobabooga** with the built-in OpenAI-compatible API like:
 
 ```bash
-CUDA_VISIBLE_DEVICES=1 python3 server.py \
+python3 server.py \
   --listen \
   --listen-port 7860 \
   --share \
